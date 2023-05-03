@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1 class="header1"> Punnett Squares </h1>
+        <h2 class="header2"> Monohybrid Cross</h2>
+
+        <!-- set id for input and when clicked render to new page -->
+        <form action="hello/" method="post">
+            {% csrf_token %}
+            <label for="fname">Mothers Genotype: </label>
+            <input type="text" id="p1geno" name="p1geno"><br><br>
+            <label for="lname">Fathers Genotype: </label>
+            <input type="text" id="p2geno" name="p2geno"><br><br>
+            <input type="submit" id="click" value="Submit">
+        </form>
+        
+        <h2 class="header3"> Dihybird Cross </h2>
+        <form action="dihyb/" method="post">
+            {% csrf_token %}
+            <label for="mname1">Mothers Genotype 1: </label>
+            <input type="text" id="p1geno" name="mgeno1"><br><br>
+            <label for="mname2">Mothers Genotype 2: </label>
+            <input type="text" id="p1geno" name="mgeno2"><br><br>
+            <label for="fname1">Fathers Genotype 1: </label>
+            <input type="text" id="p2geno" name="fgeno1"><br><br>
+            <label for="fname2">Fathers Genotype 2: </label>
+            <input type="text" id="p2geno" name="fgeno2"><br><br>
+            <input type="submit" id="click" value="Submit">
+        </form>
+
+
+
+    </body>
+</html>
